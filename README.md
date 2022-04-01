@@ -2,9 +2,9 @@
 
 A **selenium-based** **crawler** to extract images from special hashtags on **Instagram**.
 
-## Config
+## Config Instagram crawler
 
-You need to put your Instagram account to app.py. Also, you are able to set up another hashtag for exploring.
+You need to put your **Instagram account** to `app.py`. Also, you are able to set up another **hashtag** for exploring.
 
 ```
 USERNAME = "max.base"
@@ -17,6 +17,11 @@ KEYWORD = "#python"
 ```
 $ python app.py
 ```
+
+### Authors
+
+- Max Base
+- Sow
 
 ## Sources
 
