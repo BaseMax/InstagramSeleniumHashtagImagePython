@@ -1,4 +1,4 @@
-# Instagram Selenium Python
+# Instagram Selenium Hashtag Image Python
 
 A **selenium-based** **crawler** to extract images from special hashtags on **Instagram**.
 
