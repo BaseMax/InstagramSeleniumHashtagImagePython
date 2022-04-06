@@ -38,7 +38,7 @@ get_notification_or_not_popup = driver.find_element(By.XPATH, '//button[contains
 searchbox = driver.find_element(By.XPATH, "//input[@placeholder='Search']")
 searchbox.clear()
 searchbox.send_keys(KEYWORD)
-
+time.sleep(2)
 my_link = driver.find_element(By.XPATH, "//a[contains(@href, '/" + KEYWORD[1:] + "/')]").click()
 
 
@@ -62,12 +62,12 @@ for a in anchors:
     images.append(img[1])
     
 path = os.getcwd()
-path = os.path.join(path, keyword[1:] + "s")
+path = os.path.join(path, KEYWORD[1:] + "s")
 os.mkdir(path)
 
 # Download images
 counter = 0
 for image in images:
-    save_as = os.path.join(path, keyword[1:] + str(counter) + '.jpg')
+    save_as = os.path.join(path, KEYWORD[1:] + str(counter) + '.jpg')
     wget.download(image, save_as)
     counter += 1
